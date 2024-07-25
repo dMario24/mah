@@ -20,6 +20,11 @@ test = [
     "pytest-cov>=5.0.0",
 ]
 
+[tool.pdm.scripts]
+ctest = "pytest --cov"
+stest = "pytest -s"
+test = "pytest"
+
 [project.scripts]
 my-history = 'mah.cli:cmd'
 
