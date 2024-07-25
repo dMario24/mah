@@ -31,7 +31,7 @@ def cmd():
         if args.dt:
             # print(f"-d => {args.dt}")
             # TODO 특정 날짜의 명령어 TOP N
-            r = top(args.top, args.dt)
+            r = top(args.top, args.dt, args.pretty)
             #r = top(int("10"), "2024-07-17")
             print(r)
         else:
