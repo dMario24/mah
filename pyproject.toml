@@ -29,6 +29,7 @@ pythonpath = [
 ctest = "pytest --cov"
 stest = "pytest -s"
 test = "pytest"
+giti = "pip install git+https://github.com/dMario24/mah.git@0.2.0/args"
 
 [project.scripts]
 my-history = 'mah.cli:cmd'
