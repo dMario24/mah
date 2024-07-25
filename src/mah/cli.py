@@ -19,7 +19,7 @@ def cmd():
     args = parser.parse_args()
     print(args.scount, args.top, args.dt)
 
-    if args.scount:
+    if args.scount: 
         print(f"-s => {args.scount}")
         # TODO 명령어 카운트
     elif args.top:
@@ -28,7 +28,8 @@ def cmd():
             print(f"-d => {args.dt}")
             # TODO 특정 날짜의 명령어 TOP N
         else:
-            print("TODO - 에러나 안내 메시지를 주면")
+            print("TODO - 에러 안내 메시지를 주면")
+            parser.print_help()
     else:
         # TODO - 사용법을 출력한다
         parser.print_help()
